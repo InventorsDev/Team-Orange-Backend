@@ -21,4 +21,5 @@ Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
 
 Route::prefix('v1')->group(function () {
     Route::get('assessment-questions', [AssessmentController::class, 'index']);
+    Route::get('daily-assessment-questions', [AssessmentController::class, 'dailyIndex']);
 });

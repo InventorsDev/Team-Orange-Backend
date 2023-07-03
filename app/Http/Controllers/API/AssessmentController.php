@@ -2,7 +2,6 @@
 
 namespace App\Http\Controllers\API;
 
-use Illuminate\Http\Request;
 use App\Services\AssessmentService;
 use App\Http\Controllers\Controller;
 
@@ -20,5 +19,12 @@ class AssessmentController extends Controller
         $assessmentData = $this->assessmentService->getAssessmentData();
 
         return $this->successResponse('Assessment questions retrieved successfully', $assessmentData);
+    }
+
+    public function dailyIndex()
+    {
+        $dailyAssessmentData = $this->assessmentService->getDailyAssessmentData();
+
+        return $this->successResponse('Daily assessment questions retrieved successfully', $dailyAssessmentData);
     }
 }
