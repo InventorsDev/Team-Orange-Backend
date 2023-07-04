@@ -14,4 +14,9 @@ class AssessmentService
     {
         return $this->loadJsonData('json/assessment_data.json');
     }
+
+    public function getDailyAssessmentData()
+    {
+        return $this->loadJsonData('json/daily_assessment_data.json');
+    }
 }

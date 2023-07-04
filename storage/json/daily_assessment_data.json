@@ -1,0 +1,614 @@
+{
+"daily_assessment_conditions": [
+    {
+        "name": "Anxiety",
+        "questions": [
+          {
+            "question": "How would you rate your anxiety levels today?",
+            "options": [
+              {
+                "option_value": "Very high",
+                "option_weight": ""
+              },
+              {
+                "option_value": "High",
+                "option_weight": ""
+              },
+              {
+                "option_value": "Moderate",
+                "option_weight": ""
+              },
+              {
+                "option_value": "Low",
+                "option_weight": ""
+              },
+              {
+                "option_value": "Very low",
+                "option_weight": ""
+              }
+            ]
+          },
+          {
+            "question": "Did you experience any excessive worrying or feelings of anxiety today?",
+            "options": [
+              {
+                "option_value": "Yes",
+                "option_weight": ""
+              },
+              {
+                "option_value": "No",
+                "option_weight": ""
+              }
+            ]
+          },
+          {
+            "question": "Did you engage in any relaxation techniques to manage your anxiety today (e.g., deep breathing, progressive muscle relaxation)?",
+            "options": [
+              {
+                "option_value": "Yes, regularly",
+                "option_weight": ""
+              },
+              {
+                "option_value": "Yes, occasionally",
+                "option_weight": ""
+              },
+              {
+                "option_value": "No",
+                "option_weight": ""
+              }
+            ]
+          },
+          {
+            "question": "Have you noticed any physical symptoms of anxiety today (e.g., racing heart, shortness of breath)?",
+            "options": [
+              {
+                "option_value": "Yes",
+                "option_weight": ""
+              },
+              {
+                "option_value": "No",
+                "option_weight": ""
+              }
+            ]
+          },
+          {
+            "question": "Did you challenge any anxious thoughts or beliefs today?",
+            "options": [
+              {
+                "option_value": "Yes, regularly",
+                "option_weight": ""
+              },
+              {
+                "option_value": "Yes, occasionally",
+                "option_weight": ""
+              },
+              {
+                "option_value": "No",
+                "option_weight": ""
+              }
+            ]
+          },
+          {
+            "question": "How well did you cope with anxiety-provoking situations today?",
+            "options": [
+              {
+                "option_value": "Very well",
+                "option_weight": ""
+              },
+              {
+                "option_value": "Well",
+                "option_weight": ""
+              },
+              {
+                "option_value": "Moderately",
+                "option_weight": ""
+              },
+              {
+                "option_value": "Poorly",
+                "option_weight": ""
+              },
+              {
+                "option_value": "Very poorly",
+                "option_weight": ""
+              }
+            ]
+          },
+          {
+            "question": "Did you seek support from others when feeling anxious?",
+            "options": [
+              {
+                "option_value": "Yes, I sought support",
+                "option_weight": ""
+              },
+              {
+                "option_value": "No, I did not seek support",
+                "option_weight": ""
+              }
+            ]
+          },
+          {
+            "question": "How confident are you in managing your anxiety levels?",
+            "options": [
+              {
+                "option_value": "Very confident",
+                "option_weight": ""
+              },
+              {
+                "option_value": "Confident",
+                "option_weight": ""
+              },
+              {
+                "option_value": "Moderately confident",
+                "option_weight": ""
+              },
+              {
+                "option_value": "Not very confident",
+                "option_weight": ""
+              },
+              {
+                "option_value": "Not at all confident",
+                "option_weight": ""
+              }
+            ]
+          }
+        ]
+    },
+    {
+        "name": "Depression",
+        "questions": [
+          {
+            "question": "How would you rate your mood today?",
+            "options": [
+              {
+                "option_value": "Very low",
+                "option_weight": ""
+              },
+              {
+                "option_value": "Low",
+                "option_weight": ""
+              },
+              {
+                "option_value": "Neutral",
+                "option_weight": ""
+              },
+              {
+                "option_value": "High",
+                "option_weight": ""
+              },
+              {
+                "option_value": "Very high",
+                "option_weight": ""
+              }
+            ]
+          },
+          {
+            "question": "Did you experience any feelings of sadness or hopelessness today?",
+            "options": [
+              {
+                "option_value": "Yes",
+                "option_weight": ""
+              },
+              {
+                "option_value": "No",
+                "option_weight": ""
+              }
+            ]
+          },
+          {
+            "question": "Have you noticed any changes in your sleep patterns today?",
+            "options": [
+              {
+                "option_value": "Yes, I slept more than usual",
+                "option_weight": ""
+              },
+              {
+                "option_value": "Yes, I slept less than usual",
+                "option_weight": ""
+              },
+              {
+                "option_value": "No, my sleep patterns were normal",
+                "option_weight": ""
+              }
+            ]
+          },
+          {
+            "question": "Did you engage in any activities or hobbies that usually bring you joy today?",
+            "options": [
+              {
+                "option_value": "Yes, regularly",
+                "option_weight": ""
+              },
+              {
+                "option_value": "Yes, occasionally",
+                "option_weight": ""
+              },
+              {
+                "option_value": "No",
+                "option_weight": ""
+              }
+            ]
+          },
+          {
+            "question": "Did you have difficulty concentrating or making decisions today?",
+            "options": [
+              {
+                "option_value": "Yes",
+                "option_weight": ""
+              },
+              {
+                "option_value": "No",
+                "option_weight": ""
+              }
+            ]
+          },
+          {
+            "question": "How well did you manage negative thoughts or self-critical thinking today?",
+            "options": [
+              {
+                "option_value": "Very well",
+                "option_weight": ""
+              },
+              {
+                "option_value": "Well",
+                "option_weight": ""
+              },
+              {
+                "option_value": "Moderately",
+                "option_weight": ""
+              },
+              {
+                "option_value": "Poorly",
+                "option_weight": ""
+              },
+              {
+                "option_value": "Very poorly",
+                "option_weight": ""
+              }
+            ]
+          },
+          {
+            "question": "Did you seek support from others when feeling down or overwhelmed?",
+            "options": [
+              {
+                "option_value": "Yes, I sought support",
+                "option_weight": ""
+              },
+              {
+                "option_value": "No, I did not seek support",
+                "option_weight": ""
+              }
+            ]
+          },
+          {
+            "question": "How confident are you in managing your depressive symptoms?",
+            "options": [
+              {
+                "option_value": "Very confident",
+                "option_weight": ""
+              },
+              {
+                "option_value": "Confident",
+                "option_weight": ""
+              },
+              {
+                "option_value": "Moderately confident",
+                "option_weight": ""
+              },
+              {
+                "option_value": "Not very confident",
+                "option_weight": ""
+              },
+              {
+                "option_value": "Not at all confident",
+                "option_weight": ""
+              }
+            ]
+          }
+        ]
+    },
+    {
+        "name": "Stress",
+        "questions": [
+          {
+            "question": "How would you rate your stress levels today?",
+            "options": [
+              {
+                "option_value": "Very high",
+                "option_weight": ""
+              },
+              {
+                "option_value": "High",
+                "option_weight": ""
+              },
+              {
+                "option_value": "Moderate",
+                "option_weight": ""
+              },
+              {
+                "option_value": "Low",
+                "option_weight": ""
+              },
+              {
+                "option_value": "Very low",
+                "option_weight": ""
+              }
+            ]
+          },
+          {
+            "question": "Did you experience any significant stressors today?",
+            "options": [
+              {
+                "option_value": "Yes",
+                "option_weight": ""
+              },
+              {
+                "option_value": "No",
+                "option_weight": ""
+              }
+            ]
+          },
+          {
+            "question": "Have you noticed any physical symptoms of stress today (e.g., headaches, muscle tension)?",
+            "options": [
+              {
+                "option_value": "Yes",
+                "option_weight": ""
+              },
+              {
+                "option_value": "No",
+                "option_weight": ""
+              }
+            ]
+          },
+          {
+            "question": "Did you engage in any stress management techniques today (e.g., deep breathing, meditation)?",
+            "options": [
+              {
+                "option_value": "Yes, regularly",
+                "option_weight": ""
+              },
+              {
+                "option_value": "Yes, occasionally",
+                "option_weight": ""
+              },
+              {
+                "option_value": "No",
+                "option_weight": ""
+              }
+            ]
+          },
+          {
+            "question": "Did you take breaks and practice self-care throughout the day?",
+            "options": [
+              {
+                "option_value": "Yes, regularly",
+                "option_weight": ""
+              },
+              {
+                "option_value": "Yes, occasionally",
+                "option_weight": ""
+              },
+              {
+                "option_value": "No",
+                "option_weight": ""
+              }
+            ]
+          },
+          {
+            "question": "How well did you handle stressful situations today?",
+            "options": [
+              {
+                "option_value": "Very well",
+                "option_weight": ""
+              },
+              {
+                "option_value": "Well",
+                "option_weight": ""
+              },
+              {
+                "option_value": "Moderately",
+                "option_weight": ""
+              },
+              {
+                "option_value": "Poorly",
+                "option_weight": ""
+              },
+              {
+                "option_value": "Very poorly",
+                "option_weight": ""
+              }
+            ]
+          },
+          {
+            "question": "Did you seek support from others when feeling overwhelmed?",
+            "options": [
+              {
+                "option_value": "Yes, I sought support",
+                "option_weight": ""
+              },
+              {
+                "option_value": "No, I did not seek support",
+                "option_weight": ""
+              }
+            ]
+          },
+          {
+            "question": "How confident are you in managing your stress levels?",
+            "options": [
+              {
+                "option_value": "Very confident",
+                "option_weight": ""
+              },
+              {
+                "option_value": "Confident",
+                "option_weight": ""
+              },
+              {
+                "option_value": "Moderately confident",
+                "option_weight": ""
+              },
+              {
+                "option_value": "Not very confident",
+                "option_weight": ""
+              },
+              {
+                "option_value": "Not at all confident",
+                "option_weight": ""
+              }
+            ]
+          }
+        ]
+    },
+    {
+        "name": "Eating Disorders",
+        "questions": [
+          {
+            "question": "How would you rate your eating behaviors today?",
+            "options": [
+              {
+                "option_value": "Very controlled",
+                "option_weight": ""
+              },
+              {
+                "option_value": "Mostly controlled",
+                "option_weight": ""
+              },
+              {
+                "option_value": "Moderately controlled",
+                "option_weight": ""
+              },
+              {
+                "option_value": "Somewhat uncontrolled",
+                "option_weight": ""
+              },
+              {
+                "option_value": "Very uncontrolled",
+                "option_weight": ""
+              }
+            ]
+          },
+          {
+            "question": "Did you engage in any restrictive eating behaviors today?",
+            "options": [
+              {
+                "option_value": "Yes",
+                "option_weight": ""
+              },
+              {
+                "option_value": "No",
+                "option_weight": ""
+              }
+            ]
+          },
+          {
+            "question": "Did you experience any episodes of binge eating today?",
+            "options": [
+              {
+                "option_value": "Yes",
+                "option_weight": ""
+              },
+              {
+                "option_value": "No",
+                "option_weight": ""
+              }
+            ]
+          },
+          {
+            "question": "Have you noticed any changes in your body image or dissatisfaction with your appearance today?",
+            "options": [
+              {
+                "option_value": "Yes",
+                "option_weight": ""
+              },
+              {
+                "option_value": "No",
+                "option_weight": ""
+              }
+            ]
+          },
+          {
+            "question": "Did you challenge any negative thoughts or beliefs about your body or food today?",
+            "options": [
+              {
+                "option_value": "Yes, regularly",
+                "option_weight": ""
+              },
+              {
+                "option_value": "Yes, occasionally",
+                "option_weight": ""
+              },
+              {
+                "option_value": "No",
+                "option_weight": ""
+              }
+            ]
+          },
+          {
+            "question": "How well did you cope with triggers or emotional challenges related to food today?",
+            "options": [
+              {
+                "option_value": "Very well",
+                "option_weight": ""
+              },
+              {
+                "option_value": "Well",
+                "option_weight": ""
+              },
+              {
+                "option_value": "Moderately",
+                "option_weight": ""
+              },
+              {
+                "option_value": "Poorly",
+                "option_weight": ""
+              },
+              {
+                "option_value": "Very poorly",
+                "option_weight": ""
+              }
+            ]
+          },
+          {
+            "question": "Did you seek support from others when struggling with eating behaviors?",
+            "options": [
+              {
+                "option_value": "Yes, I sought support",
+                "option_weight": ""
+              },
+              {
+                "option_value": "No, I did not seek support",
+                "option_weight": ""
+              }
+            ]
+          },
+          {
+            "question": "How confident are you in managing your eating behaviors?",
+            "options": [
+              {
+                "option_value": "Very confident",
+                "option_weight": ""
+              },
+              {
+                "option_value": "Confident",
+                "option_weight": ""
+              },
+              {
+                "option_value": "Moderately confident",
+                "option_weight": ""
+              },
+              {
+                "option_value": "Not very confident",
+                "option_weight": ""
+              },
+              {
+                "option_value": "Not at all confident",
+                "option_weight": ""
+              }
+            ]
+          }
+        ]
+    }
+   
+  ]
+}
+  
