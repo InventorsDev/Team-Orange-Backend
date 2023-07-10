@@ -4,7 +4,7 @@ namespace App\Http\Requests;
 
 use Illuminate\Foundation\Http\FormRequest;
 
-class ResendOtpRequest extends FormRequest
+class VerifyOtpRequest extends FormRequest
 {
     /**
      * Determine if the user is authorized to make this request.
@@ -22,14 +22,9 @@ class ResendOtpRequest extends FormRequest
     public function rules(): array
     {
         return [
-            'email' => 'required|string|email|exists:users,email'
-        ];
-    }
 
-    public function messages()
-    {
-        return [
-            'email.exists' => "Email sent does not exist"
+            'token' => 'required|exists:tokens',
+            'email' => 'required|exists:users'
         ];
     }
 }

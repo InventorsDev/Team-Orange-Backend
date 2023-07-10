@@ -4,9 +4,11 @@ namespace App\Http\Controllers\API\Auth;
 
 use App\Models\User;
 use App\Actions\Auth\RegisterAction;
+use App\Actions\Auth\VerifyOtpAction;
 use App\Http\Controllers\Controller;
 use App\Http\Requests\RegisterRequest;
 use App\Http\Requests\ResendOtpRequest;
+use App\Http\Requests\VerifyOtpRequest;
 
 class RegisterController extends Controller
 {
@@ -26,5 +28,12 @@ class RegisterController extends Controller
         $this->sendRegistrationOtpToUser($user);
 
         return $this->successResponse('Kindly Input the verification code sent to your email address');
+    }
+
+    public function verifyOtp(VerifyOtpRequest $request)
+    {
+        $user = (new VerifyOtpAction())->execute($request);
+
+        return $this->successResponse('Otp verification successful', $this->generateAuthData($user));
     }
 }
