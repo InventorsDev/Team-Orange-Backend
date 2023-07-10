@@ -1,6 +1,7 @@
 <?php
 
 use App\Http\Controllers\API\AssessmentController;
+use App\Http\Controllers\API\Auth\LoginController;
 use App\Http\Controllers\API\Auth\RegisterController;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
@@ -26,6 +27,7 @@ Route::prefix('v1')->group(function () {
         Route::post('register', [RegisterController::class, 'register'])->name('register');
         Route::post('resend-otp', [RegisterController::class, 'resendOtp'])->name('resendOtp');
         Route::post('verify-otp', [RegisterController::class, 'verifyOtp'])->name('verifyOtp');
+        Route::post('login', [LoginController::class, 'login'])->name('login');
     });
 
 
