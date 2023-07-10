@@ -3,6 +3,8 @@
 use App\Http\Controllers\API\AssessmentController;
 use App\Http\Controllers\API\Auth\LoginController;
 use App\Http\Controllers\API\Auth\RegisterController;
+use App\Http\Controllers\API\Auth\SetUsernameController;
+use App\Http\Controllers\API\User\UserProfileController;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
 
@@ -17,9 +19,7 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
-    return $request->user();
-});
+
 
 Route::prefix('v1')->group(function () {
 
@@ -30,6 +30,10 @@ Route::prefix('v1')->group(function () {
         Route::post('login', [LoginController::class, 'login'])->name('login');
     });
 
+    Route::middleware('auth:sanctum')->group(function () {
+        Route::post('set-username', [SetUsernameController::class, 'setUsername'])->name('setUsername');
+        Route::get('user', [UserProfileController::class, 'show'])->name('show');
+    });
 
     Route::get('assessment-questions', [AssessmentController::class, 'index']);
     Route::get('daily-assessment-questions', [AssessmentController::class, 'dailyIndex']);

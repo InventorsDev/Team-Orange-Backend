@@ -10,6 +10,7 @@ use Illuminate\Validation\ValidationException;
 use Illuminate\Validation\UnauthorizedException;
 use Illuminate\Database\Eloquent\ModelNotFoundException;
 use Symfony\Component\HttpKernel\Exception\HttpException;
+use Symfony\Component\Routing\Exception\RouteNotFoundException;
 use Illuminate\Foundation\Exceptions\Handler as ExceptionHandler;
 use Symfony\Component\HttpKernel\Exception\NotFoundHttpException;
 use Symfony\Component\HttpFoundation\Exception\BadRequestException;
@@ -26,6 +27,7 @@ class Handler extends ExceptionHandler
         BadRequestException::class,
         NotFoundException::class,
         UnauthorizedException::class,
+        RouteNotFoundException::class
     ];
 
     /**
@@ -95,6 +97,10 @@ class Handler extends ExceptionHandler
 
         if ($exception instanceof ValidationException) {
             return $this->formValidationErrorAlert($exception->errors());
+        }
+
+        if ($exception instanceof RouteNotFoundException) {
+            return $this->unauthorisedRequestAlert("Unauthenticated");
         }
     }
 }
