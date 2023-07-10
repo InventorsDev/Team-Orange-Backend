@@ -31,8 +31,11 @@ Route::prefix('v1')->group(function () {
     });
 
     Route::middleware('auth:sanctum')->group(function () {
-        Route::post('set-username', [SetUsernameController::class, 'setUsername'])->name('setUsername');
-        Route::get('user', [UserProfileController::class, 'show'])->name('show');
+        Route::prefix('user')->name('user.')->group(function () {
+            Route::get('', [UserProfileController::class, 'show'])->name('show');
+            Route::post('set-username', [SetUsernameController::class, 'setUsername'])->name('setUsername');
+            Route::post('/update-profile', [UserProfileController::class, 'updateProfile'])->name('updateProfile');
+        });
     });
 
     Route::get('assessment-questions', [AssessmentController::class, 'index']);

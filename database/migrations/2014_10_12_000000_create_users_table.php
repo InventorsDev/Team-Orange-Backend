@@ -18,7 +18,7 @@ return new class extends Migration
             $table->string('username')->nullable()->unique();
             $table->string('date_of_birth')->nullable();
             $table->string('gender')->nullable();
-            $table->string('phone_number')->nullable()->unique();
+            $table->string('phone_number')->nullable();
             $table->foreignId('country_id')->nullable()->constrained('countries');
             $table->string('profile_image_url')->nullable();
             $table->timestamp('email_verified_at')->nullable();
