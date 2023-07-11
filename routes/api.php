@@ -6,6 +6,7 @@ use App\Http\Controllers\API\Auth\LoginController;
 use App\Http\Controllers\API\Auth\RegisterController;
 use App\Http\Controllers\API\Auth\ResetPasswordController;
 use App\Http\Controllers\API\Auth\SetUsernameController;
+use App\Http\Controllers\API\User\ChangePasswordController;
 use App\Http\Controllers\API\User\UserProfileController;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
@@ -39,6 +40,7 @@ Route::prefix('v1')->group(function () {
             Route::get('', [UserProfileController::class, 'show'])->name('show');
             Route::post('set-username', [SetUsernameController::class, 'setUsername'])->name('setUsername');
             Route::post('/update-profile', [UserProfileController::class, 'updateProfile'])->name('updateProfile');
+            Route::post('change-password', [ChangePasswordController::class, 'changePassword'])->name('changePassword');
         });
     });
 
