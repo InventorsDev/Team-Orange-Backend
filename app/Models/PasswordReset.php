@@ -13,4 +13,13 @@ class PasswordReset extends Model
     protected $primaryKey = 'email';
     protected $fillable = ['token', 'email', 'created_at'];
     public $timestamps = false;
+
+
+    public function isValid()
+    {
+        if (now()->diffInMinutes($this->created_at) > 10) {
+            return false;
+        }
+        return true;
+    }
 }

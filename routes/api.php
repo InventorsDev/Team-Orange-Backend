@@ -4,6 +4,7 @@ use App\Http\Controllers\API\AssessmentController;
 use App\Http\Controllers\API\Auth\ForgotPasswordController;
 use App\Http\Controllers\API\Auth\LoginController;
 use App\Http\Controllers\API\Auth\RegisterController;
+use App\Http\Controllers\API\Auth\ResetPasswordController;
 use App\Http\Controllers\API\Auth\SetUsernameController;
 use App\Http\Controllers\API\User\UserProfileController;
 use Illuminate\Http\Request;
@@ -30,6 +31,7 @@ Route::prefix('v1')->group(function () {
         Route::post('verify-otp', [RegisterController::class, 'verifyOtp'])->name('verifyOtp');
         Route::post('login', [LoginController::class, 'login'])->name('login');
         Route::post('forgot-password', [ForgotPasswordController::class, 'forgotPassword'])->name('forgotPassword');
+        Route::post('reset-password', [ResetPasswordController::class, 'resetPassword'])->name('resetPassword');
     });
 
     Route::middleware('auth:sanctum')->group(function () {
