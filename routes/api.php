@@ -1,6 +1,7 @@
 <?php
 
 use App\Http\Controllers\API\AssessmentController;
+use App\Http\Controllers\API\Auth\ForgotPasswordController;
 use App\Http\Controllers\API\Auth\LoginController;
 use App\Http\Controllers\API\Auth\RegisterController;
 use App\Http\Controllers\API\Auth\SetUsernameController;
@@ -28,6 +29,7 @@ Route::prefix('v1')->group(function () {
         Route::post('resend-otp', [RegisterController::class, 'resendOtp'])->name('resendOtp');
         Route::post('verify-otp', [RegisterController::class, 'verifyOtp'])->name('verifyOtp');
         Route::post('login', [LoginController::class, 'login'])->name('login');
+        Route::post('forgot-password', [ForgotPasswordController::class, 'forgotPassword'])->name('forgotPassword');
     });
 
     Route::middleware('auth:sanctum')->group(function () {

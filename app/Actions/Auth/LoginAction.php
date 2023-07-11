@@ -20,6 +20,10 @@ class LoginAction
     {
         $user = User::where('email', $request->email)->first();
 
+        if ($user->email_verified_at == null) {
+            throw new BadRequestException("We noticed that you havn't verify your email, kindly verify your email to login");
+        }
+
         if (!$user || !Hash::check($request->password, $user->password)) {
             throw new BadRequestException('The provided credentials are incorrect.');
         }

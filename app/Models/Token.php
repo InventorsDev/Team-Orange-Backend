@@ -28,7 +28,7 @@ class Token extends Model
     }
 
 
-    public static function createForUser(User $user, int $length = 6, string $token = null)
+    public static function createForUser(User $user, int $length = 6, string $token = null, bool $persist = true)
     {
         if (is_null($token)) {
             $min = (int) str_pad('1', $length, '0');
@@ -39,8 +39,15 @@ class Token extends Model
             } while (static::where('token', $token)->exists());
         }
 
-        return static::updateOrCreate(['user_id' => $user->id], [
-            'user_id' => $user->id, 'token' => $token,
+        if ($persist) {
+            return static::updateOrCreate(['user_id' => $user->id], [
+                'user_id' => $user->id, 'token' => $token,
+            ]);
+        }
+
+        return new static([
+            'user_id' => $user->id,
+            'token' => $token,
         ]);
     }
 }
