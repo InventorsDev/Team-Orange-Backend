@@ -22,7 +22,7 @@ return new class extends Migration
             $table->foreignId('country_id')->nullable()->constrained('countries');
             $table->string('profile_image_url')->nullable();
             $table->timestamp('email_verified_at')->nullable();
-            $table->string('password');
+            $table->string('password')->nullable();
             $table->rememberToken();
             $table->timestamps();
         });

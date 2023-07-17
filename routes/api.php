@@ -6,6 +6,7 @@ use App\Http\Controllers\API\Auth\LoginController;
 use App\Http\Controllers\API\Auth\RegisterController;
 use App\Http\Controllers\API\Auth\ResetPasswordController;
 use App\Http\Controllers\API\Auth\SetUsernameController;
+use App\Http\Controllers\API\Auth\SocialMediaLoginController;
 use App\Http\Controllers\API\User\ChangePasswordController;
 use App\Http\Controllers\API\User\UserProfileController;
 use Illuminate\Http\Request;
@@ -33,6 +34,8 @@ Route::prefix('v1')->group(function () {
         Route::post('login', [LoginController::class, 'login'])->name('login');
         Route::post('forgot-password', [ForgotPasswordController::class, 'forgotPassword'])->name('forgotPassword');
         Route::post('reset-password', [ResetPasswordController::class, 'resetPassword'])->name('resetPassword');
+        Route::get('login/{social}', [SocialMediaLoginController::class, 'redirectToProvider'])->name('redirectToProvider');
+        Route::get('google/callback', [SocialMediaLoginController::class, 'handleProviderCallback'])->name('social.callback');
     });
 
     Route::middleware('auth:sanctum')->group(function () {

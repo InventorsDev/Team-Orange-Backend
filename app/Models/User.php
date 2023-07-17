@@ -47,4 +47,9 @@ class User extends Authenticatable
     {
         return $this->belongsTo(Country::class);
     }
+
+    public function socialAccounts()
+    {
+        return $this->hasMany(SocialMediaAccount::class);
+    }
 }
