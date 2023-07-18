@@ -1,6 +1,14 @@
 <?php
 
 use App\Http\Controllers\API\AssessmentController;
+use App\Http\Controllers\API\Auth\ForgotPasswordController;
+use App\Http\Controllers\API\Auth\LoginController;
+use App\Http\Controllers\API\Auth\RegisterController;
+use App\Http\Controllers\API\Auth\ResetPasswordController;
+use App\Http\Controllers\API\Auth\SetUsernameController;
+use App\Http\Controllers\API\Auth\SocialMediaLoginController;
+use App\Http\Controllers\API\User\ChangePasswordController;
+use App\Http\Controllers\API\User\UserProfileController;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
 
@@ -15,11 +23,30 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
-    return $request->user();
-});
+
 
 Route::prefix('v1')->group(function () {
+
+    Route::prefix('auth')->name('auth.')->group(function () {
+        Route::post('register', [RegisterController::class, 'register'])->name('register');
+        Route::post('resend-otp', [RegisterController::class, 'resendOtp'])->name('resendOtp');
+        Route::post('verify-otp', [RegisterController::class, 'verifyOtp'])->name('verifyOtp');
+        Route::post('login', [LoginController::class, 'login'])->name('login');
+        Route::post('forgot-password', [ForgotPasswordController::class, 'forgotPassword'])->name('forgotPassword');
+        Route::post('reset-password', [ResetPasswordController::class, 'resetPassword'])->name('resetPassword');
+        Route::get('login/{social}', [SocialMediaLoginController::class, 'redirectToProvider'])->name('redirectToProvider');
+        Route::get('google/callback', [SocialMediaLoginController::class, 'handleProviderCallback'])->name('social.callback');
+    });
+
+    Route::middleware('auth:sanctum')->group(function () {
+        Route::prefix('user')->name('user.')->group(function () {
+            Route::get('', [UserProfileController::class, 'show'])->name('show');
+            Route::post('set-username', [SetUsernameController::class, 'setUsername'])->name('setUsername');
+            Route::post('/update-profile', [UserProfileController::class, 'updateProfile'])->name('updateProfile');
+            Route::post('change-password', [ChangePasswordController::class, 'changePassword'])->name('changePassword');
+        });
+    });
+
     Route::get('assessment-questions', [AssessmentController::class, 'index']);
     Route::get('daily-assessment-questions', [AssessmentController::class, 'dailyIndex']);
 });

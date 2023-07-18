@@ -10,6 +10,8 @@ use Laravel\Sanctum\HasApiTokens;
 
 class User extends Authenticatable
 {
+    protected $guard_name = 'api';
+
     use HasApiTokens, HasFactory, Notifiable;
 
     /**
@@ -17,11 +19,7 @@ class User extends Authenticatable
      *
      * @var array<int, string>
      */
-    protected $fillable = [
-        'name',
-        'email',
-        'password',
-    ];
+    protected $guarded = [];
 
     /**
      * The attributes that should be hidden for serialization.
@@ -39,7 +37,19 @@ class User extends Authenticatable
      * @var array<string, string>
      */
     protected $casts = [
-        'email_verified_at' => 'datetime',
+        'email_verified_at' => 'datetime:Y-m-d H:i:s',
         'password' => 'hashed',
+        'created_at' => 'datetime:Y-m-d H:i:s',
+        'updated_at' => 'datetime:Y-m-d H:i:s',
     ];
+
+    public function country()
+    {
+        return $this->belongsTo(Country::class);
+    }
+
+    public function socialAccounts()
+    {
+        return $this->hasMany(SocialMediaAccount::class);
+    }
 }
