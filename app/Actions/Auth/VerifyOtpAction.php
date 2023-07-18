@@ -16,7 +16,7 @@ class VerifyOtpAction
             $token = Token::where('token', $request->token)->first();
             $user = User::where('email', $request->email)->first();
 
-            if (!$token || $token->user_id !== $user->id) {
+            if (!$token || $token->user_id != $user->id) {
                 throw new BadRequestException('Invalid Token');
             }
 

@@ -14,5 +14,8 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    return response()->json([
+        'sttatus' => "success",
+        'message' => "Welcome to Tranquil API.."
+    ], 200);
 });
