@@ -6,6 +6,8 @@ use Carbon\Carbon;
 use App\Models\User;
 use App\Models\SocialMediaAccount;
 use App\Http\Controllers\Controller;
+use Illuminate\Support\Facades\Config;
+use Illuminate\Support\Facades\Redirect;
 use Laravel\Socialite\Facades\Socialite;
 
 class SocialMediaLoginController extends Controller
@@ -54,7 +56,9 @@ class SocialMediaLoginController extends Controller
             if ($providerUser) {
                 $user = $providerUser->user;
 
-                return $this->successResponse('User successfully logged in', $this->generateAuthData($user));
+                $redirectUrl = $this->generateRedirectUrl($user);
+
+                return Redirect::to($redirectUrl);
             }
 
             if ($email = $linkedUserSocial->getEmail()) {
@@ -77,9 +81,24 @@ class SocialMediaLoginController extends Controller
                 'provider_name' => $provider
             ]);
 
-            return $this->successResponse('User successfully signed up', $this->generateAuthData($user));
+            $redirectUrl = $this->generateRedirectUrl($user);
+
+            return Redirect::to($redirectUrl);
         } catch (\Exception $e) {
             return $this->serverErrorAlert("server error ", $e);
         }
+    }
+
+    private function generateRedirectUrl($user)
+    {
+        $redirectUrl = Config::get('custom.redirect_url');
+
+        $authData = $this->generateAuthData($user);
+
+        $token = $authData['token'];
+
+        $redirectUrl .= '/' . $token;
+
+        return $redirectUrl;
     }
 }
