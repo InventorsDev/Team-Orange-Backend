@@ -52,4 +52,9 @@ class User extends Authenticatable
     {
         return $this->hasMany(SocialMediaAccount::class);
     }
+
+    public function journals()
+    {
+        return $this->hasMany(Journal::class);
+    }
 }
