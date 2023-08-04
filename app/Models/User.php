@@ -57,4 +57,9 @@ class User extends Authenticatable
     {
         return $this->hasMany(Journal::class);
     }
+
+    public function goalSettings()
+    {
+        return $this->hasMany(GoalSetting::class);
+    }
 }
