@@ -26,4 +26,12 @@ class GoalSettingDurationEnum extends Enum
     {
         return new static($value);
     }
+
+    public static function getRandomValue(): string
+    {
+        $values = static::values();
+        $randomValue = array_rand($values);
+
+        return $randomValue;
+    }
 }
