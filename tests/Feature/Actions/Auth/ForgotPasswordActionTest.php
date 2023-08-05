@@ -1,5 +1,7 @@
 <?php
 
+namespace Tests\Feature\Actions\Auth;
+
 use Tests\TestCase;
 use App\Models\User;
 use App\Models\Token;
