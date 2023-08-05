@@ -9,23 +9,23 @@
              "options": [
               {
                 "option_value": "Rarely",
-                "option_weight": 0
+                "option_weight": 5
               },
               {
                 "option_value": "Occasionally",
-                "option_weight": 1
+                "option_weight": 4
               },
               {
                 "option_value": "Sometimes",
-                "option_weight": 2
-              },
-              {
-                "option_value": "Frequently",
                 "option_weight": 3
               },
               {
+                "option_value": "Frequently",
+                "option_weight": 2
+              },
+              {
                 "option_value": "Almost always",
-                "option_weight": 4
+                "option_weight": 1
               }
             ]
           },
