@@ -5,235 +5,244 @@
         "questions": [
           {
             "question": "Do you frequently worry about future events or outcomes?",
-            "options": [
+             "question_value":5,
+             "options": [
               {
                 "option_value": "Rarely",
-                "option_weight": ""
+                "option_weight": 5
               },
               {
                 "option_value": "Occasionally",
-                "option_weight": ""
+                "option_weight": 4
               },
               {
                 "option_value": "Sometimes",
-                "option_weight": ""
+                "option_weight": 3
               },
               {
                 "option_value": "Frequently",
-                "option_weight": ""
+                "option_weight": 2
               },
               {
                 "option_value": "Almost always",
-                "option_weight": ""
+                "option_weight": 1
               }
             ]
           },
           {
             "question": "How often do you experience racing thoughts or a sense of restlessness?",
+            "question_value":5,
             "options": [
               {
                 "option_value": "Rarely",
-                "option_weight": ""
+                "option_weight": 5
               },
               {
                 "option_value": "Occasionally",
-                "option_weight": ""
+                "option_weight": 4
               },
               {
                 "option_value": "Sometimes",
-                "option_weight": ""
+                "option_weight": 3
               },
               {
                 "option_value": "Frequently",
-                "option_weight": ""
+                "option_weight": 2
               },
               {
                 "option_value": "Almost always",
-                "option_weight": ""
+                "option_weight": 1
               }
             ]
           },
           {
             "question": "Are there specific situations or triggers that consistently cause you anxiety?",
+            "question_value":4,
             "options": [
               {
                 "option_value": "Social situations",
-                "option_weight": ""
+                "option_weight": 3
               },
               {
                 "option_value": "Performance-related situations",
-                "option_weight": ""
+                "option_weight": 1
               },
               {
                 "option_value": "Health-related concerns",
-                "option_weight": ""
+                "option_weight": 3
               },
               {
                 "option_value": "Financial matters",
-                "option_weight": ""
+                "option_weight": 4
               }
             ]
           },
           {
             "question": "Do you find it challenging to control your worrying thoughts?",
+            "question_value":5,
             "options": [
               {
                 "option_value": "Not at all",
-                "option_weight": ""
+                "option_weight": 5
               },
               {
                 "option_value": "Occasionally",
-                "option_weight": ""
+                "option_weight": 4
               },
               {
                 "option_value": "Sometimes",
-                "option_weight": ""
+                "option_weight": 3
               },
               {
                 "option_value": "Often",
-                "option_weight": ""
+                "option_weight": 2
               },
               {
                 "option_value": "Always",
-                "option_weight": ""
+                "option_weight": 1
               }
             ]
           },
           {
             "question": "Are you able to identify and challenge irrational or negative thoughts?",
+            "question_value":4,
             "options": [
               {
                 "option_value": "Yes, consistently",
-                "option_weight": ""
+                "option_weight": 4
               },
               {
                 "option_value": "Yes, sometimes",
-                "option_weight": ""
+                "option_weight": 3
               },
               {
                 "option_value": "I'm working on it",
-                "option_weight": ""
+                "option_weight": 2
               },
               {
                 "option_value": "No, not yet",
-                "option_weight": ""
+                "option_weight": 1
               }
             ]
           },
           {
             "question": "Do you experience physical symptoms of anxiety, such as rapid heartbeat or shortness of breath?",
+            "question_value":5,
             "options": [
               {
                 "option_value": "Rarely",
-                "option_weight": ""
+                "option_weight": 5
               },
               {
                 "option_value": "Occasionally",
-                "option_weight": ""
+                "option_weight": 4
               },
               {
                 "option_value": "Sometimes",
-                "option_weight": ""
+                "option_weight": 3
               },
               {
                 "option_value": "Frequently",
-                "option_weight": ""
+                "option_weight": 2
               },
               {
                 "option_value": "Almost always",
-                "option_weight": ""
-              }
+                "option_weight": 1             }
             ]
           },
           {
             "question": "How well do you handle uncertainty and unexpected changes?",
+            "question_value":5,
             "options": [
               {
                 "option_value": "Very well",
-                "option_weight": ""
+                "option_weight": 5
               },
               {
                 "option_value": "Well",
-                "option_weight": ""
+                "option_weight": 4
               },
               {
                 "option_value": "Moderately",
-                "option_weight": ""
+                "option_weight": 3
               },
               {
                 "option_value": "Poorly",
-                "option_weight": ""
+                "option_weight": 2
               },
               {
                 "option_value": "Very poorly",
-                "option_weight": ""
+                "option_weight": 1
               }
             ]
           },
           {
             "question": "Do you practice relaxation techniques or mindfulness exercises to manage anxiety?",
+            "question_value":4,
             "options": [
               {
                 "option_value": "Yes, regularly",
-                "option_weight": ""
+                "option_weight": 4
               },
               {
                 "option_value": "Yes, occasionally",
-                "option_weight": ""
+                "option_weight": 3
               },
               {
                 "option_value": "Rarely",
-                "option_weight": ""
+                "option_weight": 2
               },
               {
                 "option_value": "No, not at all",
-                "option_weight": ""
+                "option_weight": 1
               }
             ]
           },
           {
             "question": "Are you able to seek support and talk about your anxiety with others?",
+            "question_value":5,
             "options": [
               {
                 "option_value": "Yes, always",
-                "option_weight": ""
+                "option_weight": 4
               },
               {
                 "option_value": "Yes, sometimes",
-                "option_weight": ""
+                "option_weight": 3
               },
               {
                 "option_value": "Rarely",
-                "option_weight": ""
+                "option_weight": 2
               },
               {
                 "option_value": "No, never",
-                "option_weight": ""
+                "option_weight": 1
               }
             ]
           },
           {
             "question": "How well do you adapt to new situations and unfamiliar environments?",
+            "question_value":5,
             "options": [
               {
                 "option_value": "Very well",
-                "option_weight": ""
+                "option_weight": 5
               },
               {
                 "option_value": "Well",
-                "option_weight": ""
+                "option_weight": 4
               },
               {
                 "option_value": "Moderately",
-                "option_weight": ""
+                "option_weight": 3
               },
               {
                 "option_value": "Poorly",
-                "option_weight": ""
+                "option_weight": 2
               },
               {
                 "option_value": "Very poorly",
-                "option_weight": ""
+                "option_weight": 1
               }
             ]
           }
@@ -241,214 +250,225 @@
       },
       {
         "name": "Depression",
+  
         "questions": [
           {
             "question": "How often do you feel persistent sadness, emptiness, or hopelessness?",
+            "question_value":4,
             "options": [
               {
                 "option_value": "Rarely or never",
-                "option_weight": ""
+                "option_weight": 4
               },
               {
                 "option_value": "Occasionally",
-                "option_weight": ""
+                "option_weight": 3
               },
               {
                 "option_value": "Frequently",
-                "option_weight": ""
+                "option_weight": 2
               },
               {
                 "option_value": "Almost constantly",
-                "option_weight": ""
+                "option_weight": 1
               }
             ]
           },
           {
             "question": "Have you lost interest or pleasure in activities that you once enjoyed?",
+            "question_value":4,
             "options": [
               {
                 "option_value": "Not at all",
-                "option_weight": ""
+                "option_weight": 4
               },
               {
                 "option_value": "Sometimes",
-                "option_weight": ""
+                "option_weight": 3
               },
               {
                 "option_value": "Often",
-                "option_weight": ""
+                "option_weight": 2
               },
               {
                 "option_value": "Always",
-                "option_weight": ""
+                "option_weight": 1
               }
             ]
           },
           {
             "question": "Do you experience significant changes in appetite or weight (increase or decrease)?",
+            "question_value":4,
             "options": [
               {
                 "option_value": "No changes",
-                "option_weight": ""
+                "option_weight": 4
               },
               {
                 "option_value": "Mild changes",
-                "option_weight": ""
+                "option_weight": 3
               },
               {
                 "option_value": "Moderate changes",
-                "option_weight": ""
+                "option_weight": 2
               },
               {
                 "option_value": "Severe changes",
-                "option_weight": ""
+                "option_weight": 1
               }
             ]
           },
           {
             "question": "Have you noticed changes in your sleep patterns, such as insomnia or excessive sleeping?",
+            "question_value":4,
             "options": [
               {
                 "option_value": "No changes",
-                "option_weight": ""
+                "option_weight": 4
               },
               {
                 "option_value": "Mild changes",
-                "option_weight": ""
+                "option_weight": 3
               },
               {
                 "option_value": "Moderate changes",
-                "option_weight": ""
+                "option_weight": 2
               },
               {
                 "option_value": "Severe changes",
-                "option_weight": ""
+                "option_weight": 1
               }
             ]
           },
           {
             "question": "How often do you feel fatigued, lacking energy, or experiencing a loss of motivation?",
+            "question_value":4,
             "options": [
               {
                 "option_value": "Rarely or never",
-                "option_weight": ""
+                "option_weight": 4
               },
               {
                 "option_value": "Occasionally",
-                "option_weight": ""
+                "option_weight": 3
               },
               {
                 "option_value": "Frequently",
-                "option_weight": ""
+                "option_weight": 2
               },
               {
                 "option_value": "Almost constantly",
-                "option_weight": ""
+                "option_weight": 1
               }
             ]
           },
           {
             "question": "Have you noticed difficulties in concentrating, making decisions, or remembering things?",
+            "question_value":4,
             "options": [
               {
                 "option_value": "No difficulties",
-                "option_weight": ""
+                "option_weight": 4
               },
               {
                 "option_value": "Mild difficulties",
-                "option_weight": ""
+                "option_weight": 3
               },
               {
                 "option_value": "Moderate difficulties",
-                "option_weight": ""
+                "option_weight": 2
               },
               {
                 "option_value": "Severe difficulties",
-                "option_weight": ""
+                "option_weight": 1
               }
             ]
           },
           {
             "question": "Do you experience feelings of guilt, worthlessness, or self-blame?",
+            "question_value":4,
             "options": [
               {
                 "option_value": "Rarely or never",
-                "option_weight": ""
+                "option_weight": 4
               },
               {
                 "option_value": "Occasionally",
-                "option_weight": ""
+                "option_weight": 3
               },
               {
                 "option_value": "Frequently",
-                "option_weight": ""
+                "option_weight": 2
               },
               {
                 "option_value": "Almost constantly",
-                "option_weight": ""
+                "option_weight": 1
               }
             ]
           },
           {
             "question": "Have you had recurring thoughts of death or suicide?",
+            "question_value":4,
             "options": [
               {
                 "option_value": "No thoughts",
-                "option_weight": ""
+                "option_weight": 4
               },
               {
                 "option_value": "Rarely",
-                "option_weight": ""
+                "option_weight": 3
               },
               {
                 "option_value": "Occasionally",
-                "option_weight": ""
+                "option_weight": 2
               },
               {
                 "option_value": "Frequently",
-                "option_weight": ""
+                "option_weight": 1
               }
             ]
           },
           {
             "question": "How much do feelings of irritability or restlessness affect your daily life?",
+            "question_value":4,
             "options": [
               {
                 "option_value": "Not at all",
-                "option_weight": ""
+                "option_weight": 4
               },
               {
                 "option_value": "Mildly",
-                "option_weight": ""
+                "option_weight": 3
               },
               {
                 "option_value": "Moderately",
-                "option_weight": ""
+                "option_weight": 2
               },
               {
                 "option_value": "Severely",
-                "option_weight": ""
+                "option_weight": 1
               }
             ]
           },
           {
             "question": "How much does depression interfere with your daily life, work, or relationships?",
+            "question_value":4,
             "options": [
               {
                 "option_value": "Not at all",
-                "option_weight": ""
+                "option_weight": 4
               },
               {
                 "option_value": "Mildly",
-                "option_weight": ""
+                "option_weight": 3
               },
               {
                 "option_value": "Moderately",
-                "option_weight": ""
+                "option_weight": 2
               },
               {
                 "option_value": "Severely",
-                "option_weight": ""
+                "option_weight": 1
               }
             ]
           }
@@ -460,211 +480,221 @@
         "questions": [
           {
             "question": "On a scale of 1 to 10, how would you rate your overall stress level?",
+            "question_value":4,
             "options": [
               {
                 "option_value": "1-3: Low stress",
-                "option_weight": ""
+                "option_weight": 4
               },
               {
                 "option_value": "4-6: Moderate stress",
-                "option_weight": ""
+                "option_weight": 3
               },
               {
                 "option_value": "7-8: High stress",
-                "option_weight": ""
+                "option_weight": 2
               },
               {
                 "option_value": "9-10: Very high stress",
-                "option_weight": ""
+                "option_weight": 1
               }
             ]
           },
           {
             "question": "How often do you feel overwhelmed or unable to cope with the demands of daily life?",
+            "question_value":4,
             "options": [
               {
                 "option_value": "Rarely or never",
-                "option_weight": ""
+                "option_weight": 4
               },
               {
                 "option_value": "Occasionally",
-                "option_weight": ""
+                "option_weight": 3
               },
               {
                 "option_value": "Frequently",
-                "option_weight": ""
+                "option_weight": 2
               },
               {
                 "option_value": "Almost constantly",
-                "option_weight": ""
+                "option_weight": 1
               }
             ]
           },
           {
             "question": "Are you experiencing physical symptoms such as headaches, muscle tension, or stomachaches due to stress?",
+            "question_value":4,
             "options": [
               {
                 "option_value": "No physical symptoms",
-                "option_weight": ""
+                "option_weight": 4
               },
               {
                 "option_value": "Mild physical symptoms",
-                "option_weight": ""
+                "option_weight": 3
               },
               {
                 "option_value": "Moderate physical symptoms",
-                "option_weight": ""
+                "option_weight": 2
               },
               {
                 "option_value": "Severe physical symptoms",
-                "option_weight": ""
+                "option_weight": 1
               }
             ]
           },
           {
             "question": "Have you noticed changes in your sleeping patterns, such as difficulty falling asleep or staying asleep?",
+            "question_value":4,
             "options": [
               {
                 "option_value": "No changes",
-                "option_weight": ""
+                "option_weight": 4
               },
               {
                 "option_value": "Mild changes",
-                "option_weight": ""
+                "option_weight": 3
               },
               {
                 "option_value": "Moderate changes",
-                "option_weight": ""
+                "option_weight": 2
               },
               {
                 "option_value": "Severe changes",
-                "option_weight": ""
+                "option_weight": 1
               }
             ]
           },
           {
             "question": "How often do you find it hard to relax or unwind?",
+            "question_value":4,
             "options": [
               {
                 "option_value": "Rarely or never",
-                "option_weight": ""
+                "option_weight": 4
               },
               {
                 "option_value": "Occasionally",
-                "option_weight": ""
+                "option_weight": 3
               },
               {
                 "option_value": "Frequently",
-                "option_weight": ""
+                "option_weight": 2
               },
               {
                 "option_value": "Almost constantly",
-                "option_weight": ""
+                "option_weight": 1
               }
             ]
           },
           {
             "question": "Are you experiencing increased irritability or mood swings due to stress?",
+            "question_value":4,
             "options": [
               {
                 "option_value": "Not at all",
-                "option_weight": ""
+                "option_weight": 4
               },
               {
                 "option_value": "Sometimes",
-                "option_weight": ""
+                "option_weight": 3
               },
               {
                 "option_value": "Often",
-                "option_weight": ""
+                "option_weight": 2
               },
               {
                 "option_value": "Always",
-                "option_weight": ""
+                "option_weight": 1
               }
             ]
           },
           {
             "question": "Have you noticed changes in your appetite or eating habits as a result of stress?",
+            "question_value":4,
             "options": [
               {
                 "option_value": "No changes",
-                "option_weight": ""
+                "option_weight": 4
               },
               {
                 "option_value": "Mild changes",
-                "option_weight": ""
+                "option_weight": 3
               },
               {
                 "option_value": "Moderate changes",
-                "option_weight": ""
+                "option_weight": 2
               },
               {
                 "option_value": "Severe changes",
-                "option_weight": ""
+                "option_weight": 1
               }
             ]
           },
           {
             "question": "How often do you feel a sense of racing thoughts or difficulty focusing on tasks?",
+            "question_value":4,
             "options": [
               {
                 "option_value": "Rarely or never",
-                "option_weight": ""
+                "option_weight": 4
               },
               {
                 "option_value": "Occasionally",
-                "option_weight": ""
+                "option_weight": 3
               },
               {
                 "option_value": "Frequently",
-                "option_weight": ""
+                "option_weight": 2
               },
               {
                 "option_value": "Almost constantly",
-                "option_weight": ""
+                "option_weight": 1
               }
             ]
           },
           {
             "question": "Do you find it challenging to make decisions or feel indecisive due to stress?",
+            "question_value":4,
             "options": [
               {
                 "option_value": "Not at all",
-                "option_weight": ""
+                "option_weight": 4
               },
               {
                 "option_value": "Sometimes",
-                "option_weight": ""
+                "option_weight": 3
               },
               {
                 "option_value": "Often",
-                "option_weight": ""
+                "option_weight": 2
               },
               {
                 "option_value": "Always",
-                "option_weight": ""
+                "option_weight": 1
               }
             ]
           },
           {
             "question": "How much do stress levels interfere with your daily life, work, or relationships?",
+            "question_value":4,
             "options": [
               {
                 "option_value": "Not at all",
-                "option_weight": ""
+                "option_weight": 4
               },
               {
                 "option_value": "Mildly",
-                "option_weight": ""
+                "option_weight": 3
               },
               {
                 "option_value": "Moderately",
-                "option_weight": ""
+                "option_weight": 2
               },
               {
                 "option_value": "Severely",
-                "option_weight": ""
+                "option_weight": 1
               }
             ]
           }
@@ -676,211 +706,221 @@
         "questions": [
           {
             "question": "Have you noticed a significant change in your eating patterns or behaviors recently?",
+            "question_value":4,
             "options": [
               {
                 "option_value": "No change",
-                "option_weight": ""
+                "option_weight": 4
               },
               {
                 "option_value": "Some changes, but not severe",
-                "option_weight": ""
+                "option_weight":  3
               },
               {
                 "option_value": "Noticeable changes",
-                "option_weight": ""
+                "option_weight": 2
               },
               {
                 "option_value": "Drastic changes",
-                "option_weight": ""
+                "option_weight": 1
               }
             ]
           },
           {
             "question": "Do you have an intense fear of gaining weight or becoming fat?",
+            "question_value":4,
             "options": [
               {
                 "option_value": "Not at all",
-                "option_weight": ""
+                "option_weight": 4
               },
               {
                 "option_value": "Occasionally",
-                "option_weight": ""
+                "option_weight": 3
               },
               {
                 "option_value": "Frequently",
-                "option_weight": ""
+                "option_weight": 2
               },
               {
                 "option_value": "Always",
-                "option_weight": ""
+                "option_weight": 1
               }
             ]
           },
           {
             "question": "Have you been restricting your food intake or following strict diets to control your weight?",
+            "question_value":4,
             "options": [
               {
                 "option_value": "No restrictions",
-                "option_weight": ""
+                "option_weight": 4
               },
               {
                 "option_value": "Some restrictions, but not severe",
-                "option_weight": ""
+                "option_weight": 3
               },
               {
                 "option_value": "Significant restrictions",
-                "option_weight": ""
+                "option_weight": 2
               },
               {
                 "option_value": "Extreme restrictions",
-                "option_weight": ""
+                "option_weight": 1
               }
             ]
           },
           {
             "question": "Have you been engaging in binge eating episodes, consuming large amounts of food in a short period with a lack of control?",
+            "question_value":4,
             "options": [
               {
                 "option_value": "No binge eating",
-                "option_weight": ""
+                "option_weight": 4
               },
               {
                 "option_value": "Occasional binge eating",
-                "option_weight": ""
+                "option_weight": 3
               },
               {
                 "option_value": "Frequent binge eating",
-                "option_weight": ""
+                "option_weight": 2
               },
               {
                 "option_value": "Regular or constant binge eating",
-                "option_weight": ""
+                "option_weight": 1
               }
             ]
           },
           {
             "question": "Are you engaging in compensatory behaviors such as self-induced vomiting, excessive exercise, or misuse of laxatives or diuretics after eating?",
+            "question_value":4,
             "options": [
               {
                 "option_value": "No compensatory behaviors",
-                "option_weight": ""
+                "option_weight": 4
               },
               {
                 "option_value": "Occasional compensatory behaviors",
-                "option_weight": ""
+                "option_weight": 3
               },
               {
                 "option_value": "Frequent compensatory behaviors",
-                "option_weight": ""
+                "option_weight": 2
               },
               {
                 "option_value": "Regular or constant compensatory behaviors",
-                "option_weight": ""
+                "option_weight": 1
               }
             ]
           },
           {
             "question": "Have you noticed a significant change in your body weight or body image perception?",
+            "question_value":4,
             "options": [
               {
                 "option_value": "No change",
-                "option_weight": ""
+                "option_weight": 4
               },
               {
                 "option_value": "Some change, but not severe",
-                "option_weight": ""
+                "option_weight": 3
               },
               {
                 "option_value": "Noticeable change",
-                "option_weight": ""
+                "option_weight": 2
               },
               {
                 "option_value": "Drastic change",
-                "option_weight": ""
+                "option_weight": 1
               }
             ]
           },
           {
             "question": "Are you experiencing frequent feelings of guilt, shame, or disgust related to your eating habits or body shape?",
+            "question_value":4,
             "options": [
               {
                 "option_value": "Rarely or never",
-                "option_weight": ""
+                "option_weight": 4
               },
               {
                 "option_value": "Occasionally",
-                "option_weight": ""
+                "option_weight": 3
               },
               {
                 "option_value": "Frequently",
-                "option_weight": ""
+                "option_weight": 2
               },
               {
                 "option_value": "Almost constantly",
-                "option_weight": ""
+                "option_weight": 1
               }
             ]
           },
           {
             "question": "Have you been avoiding social situations involving food or making excuses to avoid meals with others?",
+            "question_value":4,
             "options": [
               {
                 "option_value": "No avoidance",
-                "option_weight": ""
+                "option_weight": 4
               },
               {
                 "option_value": "Occasional avoidance",
-                "option_weight": ""
+                "option_weight": 3
               },
               {
                 "option_value": "Frequent avoidance",
-                "option_weight": ""
+                "option_weight": 2
               },
               {
                 "option_value": "Regular or constant avoidance",
-                "option_weight": ""
+                "option_weight": 1
               }
             ]
           },
           {
             "question": "Are you preoccupied with thoughts of food, calories, weight, or body image throughout the day?",
+            "question_value":4,
             "options": [
               {
                 "option_value": "Rarely or never",
-                "option_weight": ""
+                "option_weight": 4
               },
               {
                 "option_value": "Occasionally",
-                "option_weight": ""
+                "option_weight": 3
               },
               {
                 "option_value": "Frequently",
-                "option_weight": ""
+                "option_weight": 2
               },
               {
                 "option_value": "Almost constantly",
-                "option_weight": ""
+                "option_weight": 1
               }
             ]
           },
           {
             "question": "How much is the eating disorder affecting your daily life, relationships, or overall well-being?",
+            "question_value":4,
             "options": [
               {
                 "option_value": "Not at all",
-                "option_weight": ""
+                "option_weight": 4
               },
               {
                 "option_value": "Mildly",
-                "option_weight": ""
+                "option_weight": 3
               },
               {
                 "option_value": "Moderately",
-                "option_weight": ""
+                "option_weight": 2
               },
               {
                 "option_value": "Severely",
-                "option_weight": ""
+                "option_weight": 1
               }
             ]
           }
