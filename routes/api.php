@@ -7,6 +7,8 @@ use App\Http\Controllers\API\Auth\RegisterController;
 use App\Http\Controllers\API\Auth\ResetPasswordController;
 use App\Http\Controllers\API\Auth\SetUsernameController;
 use App\Http\Controllers\API\Auth\SocialMediaLoginController;
+use App\Http\Controllers\API\GoalSettingController;
+use App\Http\Controllers\API\JournalController;
 use App\Http\Controllers\API\User\ChangePasswordController;
 use App\Http\Controllers\API\User\UserProfileController;
 use Illuminate\Http\Request;
@@ -44,6 +46,17 @@ Route::prefix('v1')->group(function () {
             Route::post('set-username', [SetUsernameController::class, 'setUsername'])->name('setUsername');
             Route::post('/update-profile', [UserProfileController::class, 'updateProfile'])->name('updateProfile');
             Route::post('change-password', [ChangePasswordController::class, 'changePassword'])->name('changePassword');
+
+            Route::get('journals', [JournalController::class, 'index']);
+            Route::post('journal', [JournalController::class, 'store']);
+        });
+
+        Route::prefix('goal-settings')->name('goalSettings.')->group(function () {
+            Route::get('', [GoalSettingController::class, 'index'])->name('index');
+            Route::post('', [GoalSettingController::class, 'store'])->name('store');
+            Route::get('/{goalSetting}', [GoalSettingController::class, 'show'])->name('show');
+            Route::patch('/{goalSetting}', [GoalSettingController::class, 'update'])->name('update');
+            Route::delete('/{goalSetting}', [GoalSettingController::class, 'destroy'])->name('destroy');
         });
     });
 

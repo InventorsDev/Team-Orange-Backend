@@ -13,7 +13,7 @@ class ChangePasswordAction
     {
         $user = $request->user();
 
-        if (!Hash::check($request->old_password, $user->password)) {
+        if (!$user || !Hash::check($request->old_password, $user->password)) {
             throw new BadRequestException('Previous Passwords do not match');
         }
 

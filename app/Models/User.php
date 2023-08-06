@@ -52,4 +52,14 @@ class User extends Authenticatable
     {
         return $this->hasMany(SocialMediaAccount::class);
     }
+
+    public function journals()
+    {
+        return $this->hasMany(Journal::class);
+    }
+
+    public function goalSettings()
+    {
+        return $this->hasMany(GoalSetting::class);
+    }
 }
