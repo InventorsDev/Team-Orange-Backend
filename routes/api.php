@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\API\ArticleController;
 use App\Http\Controllers\API\AssessmentController;
 use App\Http\Controllers\API\Auth\ForgotPasswordController;
 use App\Http\Controllers\API\Auth\LoginController;
@@ -58,6 +59,8 @@ Route::prefix('v1')->group(function () {
             Route::patch('/{goalSetting}', [GoalSettingController::class, 'update'])->name('update');
             Route::delete('/{goalSetting}', [GoalSettingController::class, 'destroy'])->name('destroy');
         });
+
+        Route::get('articles', [ArticleController::class, 'index'])->name('index');
     });
 
     Route::get('assessment-questions', [AssessmentController::class, 'index']);
